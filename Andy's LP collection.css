@@ -1,0 +1,104 @@
+body{
+    background-color: ivory;
+}
+.menubar{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: chocolate;
+}
+.mainbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-right: 20px;
+}
+.box1{
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 75px;
+    margin-left: 25px;
+    border: solid 5px;
+    border-color: chocolate;
+    color:darkgreen
+}
+.menubarLP{
+    width: 100%;
+    margin-bottom: 50px;
+}
+button{
+    border-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 50px;
+    color: aliceblue;
+    background-color: black;
+}
+.button2{
+    margin-right: 10px;
+}
+.menubarLP{
+    border-radius: 20px;
+    border-color: chocolate;
+}
+.Image1{
+    width: 98%;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.titleofthesong{
+    font-size: 1.5vw;
+    color: chocolate;
+    margin-top: -5px;
+    margin-bottom: -15px;
+}
+.bandname{
+    margin-bottom: -15px;
+    font-size: 1.25vw;
+}
+.Genre{
+    margin-bottom: -2px;
+    font-size: 1.25vw;
+}
+a{
+    font-size: 1vw;
+}
+video{
+    width: 200px;
+}
+
+@media screen and (max-width: 767px) {
+    .mainbox{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 768px) and(max-width: 1023px){
+    .mainbox{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1024px){
+    .mainbox{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .menubar{
+        height: 100px;
+    }
+    button{
+        border-radius: 100px;
+        margin-top: 5px;
+        margin-left: 10px;
+        height: 90px;
+        width: 250px;
+        font-size: 20px;
+    }
+    .button2 button{
+        width: 90px;
+    }
+}
